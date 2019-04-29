@@ -14,17 +14,22 @@
 
 #title{
     background-color: rgb(166, 166, 255);
-    width:100vw;
+    width:73.5vw;
     height:10vh;
     font-size:1em;
     text-align: center;
+    position: relative;
+    right:2.15vw;
 }
 #header{
     font-size:1em;
     text-align: center;
     background-color: rgb(2, 80, 126);
-    width:100vw;
+    width:25vw;
+    height:100vh;
     margin-bottom: 5vh;
+    position: relative;
+    right:1.5vw;
 }
 
 .material-icons{
@@ -42,9 +47,9 @@ button{
     border-width: 0px;
 }
 
-.followcell{
+/* .followcell{
     border-left: 1px solid black
-}
+} */
 
 @media screen and (max-width: 375px){
     .header-text{
@@ -54,7 +59,9 @@ button{
 /* ===================== */
 /* === Contact Modal === */
 /* ===================== */
-
+#side-b{
+    width: 50vw;
+}
 .modal-header{
     background-color: rgb(174, 246, 247);
 }
@@ -97,13 +104,15 @@ button{
 /* ===================== */
 #content{
     background-color: white;
-    width:100vw;
+    width:65vw;
     height:80vh;
     
 }
 .image{
     height:38vh;
-    width:80vw;
+    /* width:40vw; */
+    position: relative;
+    right:10vw;
 } 
 .imageTitle{
     color:white;
@@ -120,7 +129,7 @@ button{
 #homeText{
     font-size: 0.9em;
     text-align: center;
-    width:100vw;
+    
 
 }
 
@@ -160,5 +169,5 @@ button{
     font-size: 10px;
     width: 100vw;
     position: relative;
-    bottom: -45vh;
+    bottom: 8vh;
 }
