@@ -14,12 +14,12 @@
 
 #title{
     background-color: rgb(166, 166, 255);
-    width:73.5vw;
+    width:74vw;
     height:10vh;
     font-size:1em;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
-    right:2.15vw;
+    right:3.48vw;
 }
 #header{
     font-size:1em;
@@ -60,7 +60,7 @@ button{
 /* === Contact Modal === */
 /* ===================== */
 #side-b{
-    width: 50vw;
+    width: 100vw;
 }
 .modal-header{
     background-color: rgb(174, 246, 247);
