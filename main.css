@@ -126,9 +126,14 @@ button{
     font-size: 1em;
 }
 
+#profile-pic{
+    height: 30vh;
+}
+
 #homeText{
     font-size: 0.9em;
     text-align: center;
+    margin-top: 5vh;
     
 
 }
