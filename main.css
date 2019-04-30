@@ -1,7 +1,7 @@
-.container{
+/* .container{
     width: 100vw;
     height: 100vh;
-}
+} */
 
 #app{
     width:100vw;
@@ -14,7 +14,7 @@
 
 #title{
     background-color: rgb(166, 166, 255);
-    width:74vw;
+    width:73vw;
     height:10vh;
     font-size:1em;
     /* text-align: center; */
@@ -45,23 +45,33 @@ button{
     text-align: center;
     border-radius: 4px;
     border-width: 0px;
+    color:white;
 }
 
 /* .followcell{
     border-left: 1px solid black
 } */
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 575px){
+    #title{
+        width:100vw;
+        height:20vh;
+    }
+
+    .side-a{
+        display: none;
+    }
     .header-text{
         display: none;
     }
+    /* .headlink{
+        /* width:10%; */
+    /* }  */
 }
 /* ===================== */
 /* === Contact Modal === */
 /* ===================== */
-#side-b{
-    width: 100vw;
-}
+
 .modal-header{
     background-color: rgb(174, 246, 247);
 }
@@ -102,6 +112,16 @@ button{
 /* ===================== */
 /* === content area ==== */
 /* ===================== */
+#page-container{
+    height:70vh;
+    margin-top: 5vh;
+}
+#side-b{
+    width: 100vw;
+    height:100vh;
+    position: relative;
+}
+
 #content{
     background-color: white;
     width:65vw;
@@ -165,6 +185,17 @@ button{
     }
 }
 
+@media screen and (max-width: 575px){
+    #content{
+        height:60vh;
+    }
+
+    #home-summary{
+        font-size:0.85em;
+        width:100vw;
+        text-align: start;
+    }
+}
 
 /* =================== */
 /* === footer area === */
@@ -175,4 +206,10 @@ button{
     width: 100vw;
     position: relative;
     bottom: 8vh;
+}
+@media screen and (max-width: 575px){
+    #footer{
+        position: relative;
+        bottom:-75vh;
+    }
 }

@@ -16,7 +16,7 @@
 <body>
     <!-- The main parent container -->
     <div class="row container-fluid" id="app">
-        <div class="col-sm-1">
+        <div class="col-sm-1 side-a">
             <!-- Header parent-child -->
                     <!-- Don't panic. These buttons are a bit long to handle dispaying differently at different layouts. -->
                     <div class="d-flex flex-column justify-content-start align-items-start" id="header">
@@ -24,7 +24,7 @@
                         <button id="resume-button" class="headlink followcell"><i class="material-icons">assignment</i><span class="header-text">Resume</span></button>
                         <a target="_blank" href="https://github.com/piercecollazo"><button id="git-button" class="headlink followcell"><i class="material-icons">cloud_download</i><span class="header-text">Git</span></button></a>
                         <button id="contact-button" class="headlink followcell" data-toggle="modal" data-target="#contactModal"><i class="material-icons">mail</i><span class="header-text">Contact</span></button>
-                        <button id="login" class="headlink followcell"><i class="material-icons">account_circle</i>Login/Sign up</button>
+                        
                     </div>
                     <!-- Modal for contact button -->
                     <div class="modal fade" id="contactModal">
@@ -60,12 +60,23 @@
                         </div>
                     </div>
         </div>
-        <div class="col-sm-6 container-fluid" id="side-b">
-        <div class="row" id="title">
-                    <h1>Fullstack for hire</h1>
-        </div>
+        <div class="col-sm-6  container-fluid d-flex flex-column" id="side-b">
+            <div class="row" id="title">
+                <div class="row">
+                        <h1>Fullstack for hire</h1>
+                </div>
+                    <div class="row justify-content-center">
+                        <button id="home-button" class="headlink"><i class="material-icons">home</i></button>
+                        <button id="resume-button" class="headlink followcell"><i class="material-icons">assignment</i><</button>
+                        <a target="_blank" href="https://github.com/piercecollazo"><button id="git-button" class="headlink followcell"><i class="material-icons">cloud_download</i></button></a>
+                        <button id="contact-button" class="headlink followcell" data-toggle="modal" data-target="#contactModal"><i class="material-icons">mail</i></button>
+                        <button class="align-self-end" id="login" class="headlink followcell"><i class="material-icons">account_circle</i>Login/Sign up</button>
+
+                    </div>
+                        
+            </div>
         <!-- Content holder for image slideshow and summary text -->
-        <div class="row">
+        <div class="row" id="page-container">
             <div class="container-fluid" id="content">
                 <div class="row">
                     <!-- image slideshow -->
@@ -116,7 +127,7 @@
 
                 <div class="row justify-content-center" id="homeText">
                     <img src="./assets/images/axolotl6.jpg" class="col-sm-4" id="profile-pic">
-                    <p class="col-sm-8 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo mi, ornare nec dui nec, aliquam posuere nisi. Nam non euismod nibh. Nam maximus elit in mi accumsan, nec lobortis felis maximus. Pellentesque vestibulum sit amet lacus tristique hendrerit. Vivamus quis iaculis nisl, quis porttitor nibh. Aliquam vitae aliquet mauris. Praesent tincidunt rhoncus lacus.</p>
+                    <p class="col-sm-8" id="home-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo mi, ornare nec dui nec, aliquam posuere nisi. Nam non euismod nibh. Nam maximus elit in mi accumsan, nec lobortis felis maximus. Pellentesque vestibulum sit amet lacus tristique hendrerit. Vivamus quis iaculis nisl, quis porttitor nibh. Aliquam vitae aliquet mauris. Praesent tincidunt rhoncus lacus.</p>
                 </div>
             </div>
         </div>
