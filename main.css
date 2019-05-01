@@ -14,12 +14,13 @@
 
 #title{
     background-color: rgb(166, 166, 255);
-    width:73vw;
-    height:10vh;
+    width:100vw;
+    height:15vh;
     font-size:1em;
     /* text-align: center; */
-    position: relative;
-    right:3.48vw;
+    /* position: relative;
+    right:3.48vw; */
+    /* overflow: hidden; */
 }
 #header{
     font-size:1em;
@@ -28,8 +29,8 @@
     width:25vw;
     height:100vh;
     margin-bottom: 5vh;
-    position: relative;
-    right:1.5vw;
+    /* position: relative;
+    right:1.5vw; */
 }
 
 .material-icons{
@@ -53,9 +54,23 @@ button{
 } */
 
 @media screen and (max-width: 575px){
+    #mobile-header{
+        background-color:  rgb(2, 80, 126);
+        /* position: relative;
+        left:5.5vw; */
+        overflow: hidden;
+    }
     #title{
         width:100vw;
-        height:20vh;
+        height:15vh;
+        margin-left:-10vw;
+        /* position: relative;
+        left: 0.2vw; */
+        text-align: center;
+    }
+
+    #title-text{
+        font-size: 25px;
     }
 
     .side-a{
@@ -188,6 +203,7 @@ button{
 @media screen and (max-width: 575px){
     #content{
         height:60vh;
+        margin-left: 2vw;
     }
 
     #home-summary{
@@ -211,5 +227,6 @@ button{
     #footer{
         position: relative;
         bottom:-75vh;
+        overflow: hidden;
     }
 }
