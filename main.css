@@ -29,6 +29,7 @@
     width:25vw;
     height:100vh;
     margin-bottom: 5vh;
+    margin-left: -1.5vw;
     /* position: relative;
     right:1.5vw; */
 }
@@ -52,7 +53,18 @@ button{
 /* .followcell{
     border-left: 1px solid black
 } */
+@media screen and (min-width: 576px){
+    #mobile-header{
+        display: none;
+    }
 
+    #title{
+        margin-left: -5vw;
+        height:10vh;
+        width:75vw;
+        overflow: hidden;
+    }
+}
 @media screen and (max-width: 575px){
     #mobile-header{
         background-color:  rgb(2, 80, 126);
