@@ -213,6 +213,12 @@ button{
 }
 
 @media screen and (max-width: 575px){
+    /* #side-b{
+        padding-right: 1px;
+    }
+    #page-container{
+        padding-right: -10vw;
+    } */
     #content{
         height:60vh;
         margin-left: 2vw;
